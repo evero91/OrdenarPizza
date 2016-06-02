@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--iPizza-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="iPizza" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AWOrdenarPizza" customModuleProvider="target">
+                    <items>
+                        <imageView width="1" height="100" alignment="center" verticalAlignment="center" image="pizza3" contentMode="scaleAspectFit" id="mMy-Wh-lxH"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Crear Pizza" id="f2Z-xR-lqd">
+                            <connections>
+                                <segue destination="bub-wr-0UT" kind="push" id="fTG-BX-1Ur"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="197" y="355"/>
+        </scene>
+        <!--Tamaño-->
+        <scene sceneID="nqM-Us-b6k">
+            <objects>
+                <controller identifier="Tamaño" title="Tamaño" id="bub-wr-0UT" customClass="TamanoIC" customModule="AWOrdenarPizza_Extension">
+                    <items>
+                        <table alignment="left" id="zZn-ku-Kap">
+                            <items>
+                                <tableRow identifier="rowTamano" id="5OR-wj-5Hk" customClass="TamanoRC" customModule="AWOrdenarPizza_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="q9C-vo-hzf">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="aRr-YD-9Im">
+                                                <color key="color" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <label alignment="left" verticalAlignment="center" text="Tamaño" id="Kag-YA-eqT">
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblTamano" destination="Kag-YA-eqT" id="A4F-1y-lxK"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblTamanos" destination="zZn-ku-Kap" id="eci-Du-7Se"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="460" y="355"/>
+        </scene>
+        <!--Masa-->
+        <scene sceneID="CiM-r1-mRS">
+            <objects>
+                <controller identifier="Masa" title="Masa" id="c0S-DX-YFV" customClass="MasaIC" customModule="AWOrdenarPizza_Extension">
+                    <items>
+                        <table alignment="left" id="rDO-uR-0gt">
+                            <items>
+                                <tableRow identifier="rowMasa" id="dxE-S0-bo2" customClass="MasaRC" customModule="AWOrdenarPizza_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="MNu-gj-XGc">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="Fxv-pS-gjh">
+                                                <color key="color" red="1" green="0.98289841211502826" blue="0.47397259601941732" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <label alignment="left" verticalAlignment="center" text="Masa" id="NJt-iu-tcB">
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblMasa" destination="NJt-iu-tcB" id="6lE-Zq-23j"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblMasa" destination="rDO-uR-0gt" id="DVE-wO-4dX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="701" y="355"/>
+        </scene>
+        <!--Queso-->
+        <scene sceneID="7ON-dO-BOp">
+            <objects>
+                <controller identifier="Queso" title="Queso" id="Z0Q-cQ-H7e" customClass="QuesoIC" customModule="AWOrdenarPizza_Extension">
+                    <items>
+                        <table alignment="left" id="vec-5e-osG">
+                            <items>
+                                <tableRow identifier="rowQueso" id="N3A-Aw-ZOx" customClass="QuesoRC" customModule="AWOrdenarPizza_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="cLF-if-Gpu">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="UWI-sg-pgN">
+                                                <color key="color" red="0.95185420265874399" green="1" blue="0.93770467547759928" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <label alignment="left" verticalAlignment="center" text="Queso" id="Mvf-Ex-dcd">
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblQueso" destination="Mvf-Ex-dcd" id="Tez-T2-vMA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblQueso" destination="vec-5e-osG" id="kpO-mi-ase"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="937" y="355"/>
+        </scene>
+        <!--Ingredientes-->
+        <scene sceneID="0u5-4M-QCc">
+            <objects>
+                <controller identifier="Ingredientes" title="Ingredientes" id="pLy-mq-qTc" customClass="IngredientesIC" customModule="AWOrdenarPizza_Extension">
+                    <items>
+                        <switch width="1" alignment="left" title="Jamón" id="06q-PE-ED4">
+                            <connections>
+                                <action selector="seleccionoJamon:" destination="pLy-mq-qTc" id="ExA-As-iw8"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pepperoni" id="duR-Ln-rkg">
+                            <connections>
+                                <action selector="seleccionoPepperoni:" destination="pLy-mq-qTc" id="uYC-HU-Eck"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pavo" id="UOt-g5-FTu">
+                            <connections>
+                                <action selector="seleccionoPavo:" destination="pLy-mq-qTc" id="L1d-pB-c53"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salchicha" id="XRo-Zs-fAh">
+                            <connections>
+                                <action selector="seleccionoSalchicha:" destination="pLy-mq-qTc" id="9UD-C5-Ydk"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Aceituna" id="hQS-41-rJd">
+                            <connections>
+                                <action selector="seleccionoAceituna:" destination="pLy-mq-qTc" id="Wqj-0o-qmY"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cebolla" id="PRb-0E-6W7">
+                            <connections>
+                                <action selector="seleccionoCebolla:" destination="pLy-mq-qTc" id="qvx-ki-Mpj"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pimiento" id="JCR-Xl-AXJ">
+                            <connections>
+                                <action selector="seleccionoPimiento:" destination="pLy-mq-qTc" id="1Y9-lw-zpa"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Piña" id="Cvd-Zu-6U6">
+                            <connections>
+                                <action selector="seleccionoPina:" destination="pLy-mq-qTc" id="8vj-hS-LDI"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Anchoa" id="KzQ-fZ-Nvv">
+                            <connections>
+                                <action selector="seleccionoAnchoa:" destination="pLy-mq-qTc" id="QZU-Dn-Pmc"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Confirmar" id="tmO-Jc-L7s">
+                            <connections>
+                                <action selector="confirmar" destination="pLy-mq-qTc" id="cpm-1e-QEL"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1196" y="355"/>
+        </scene>
+        <!--Resumen-->
+        <scene sceneID="gZ6-Nx-1pu">
+            <objects>
+                <controller identifier="Resumen" title="Resumen" id="l14-un-Drm" customClass="ResumenIC" customModule="AWOrdenarPizza_Extension">
+                    <items>
+                        <group width="1" height="0.0" alignment="left" spacing="6" id="tm3-Oo-cnx">
+                            <items>
+                                <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="PGj-BB-ADk">
+                                    <color key="color" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <label alignment="left" verticalAlignment="center" text="Tamaño" id="wNg-AL-S1J">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Tamaño" textAlignment="left" id="eWl-9h-Wuw"/>
+                        <group width="1" height="0.0" alignment="left" spacing="6" id="zHQ-Q7-TOk">
+                            <items>
+                                <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="MyG-x2-ndF">
+                                    <color key="color" red="1" green="0.98289841209999995" blue="0.47397259600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <label alignment="left" verticalAlignment="center" text="Masa" id="lqv-md-TRl">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Masa" textAlignment="left" id="7mu-i9-H8N"/>
+                        <group width="1" height="0.0" alignment="left" spacing="6" id="cNk-yl-FLW">
+                            <items>
+                                <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="pge-Jr-KcK">
+                                    <color key="color" red="0.95185420269999998" green="1" blue="0.93770467550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <label alignment="left" verticalAlignment="center" text="Queso" id="oPD-H9-nZX">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Queso" textAlignment="left" id="dhv-Uc-uIR"/>
+                        <group width="1" height="0.0" alignment="left" spacing="6" id="4WZ-lw-HlW">
+                            <items>
+                                <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="fKM-ep-cMS">
+                                    <color key="color" red="1" green="0.7273929992708662" blue="0.68546429721113655" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <label alignment="left" verticalAlignment="center" text="Ingredientes" id="R2p-4X-A0j">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="18"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Ingredientes" numberOfLines="0" id="3AA-mI-LKk"/>
+                        <button width="1" alignment="left" title="Ordenar" id="3L8-oa-Ps8">
+                            <connections>
+                                <action selector="ordenar" destination="l14-un-Drm" id="2m2-Kk-inb"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblIngredientes" destination="3AA-mI-LKk" id="0zX-Ty-2xD"/>
+                        <outlet property="lblMasa" destination="7mu-i9-H8N" id="gvs-XH-vrd"/>
+                        <outlet property="lblQueso" destination="dhv-Uc-uIR" id="IYx-cx-lq8"/>
+                        <outlet property="lblTamano" destination="eWl-9h-Wuw" id="qXa-DG-UET"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1458" y="355"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>
